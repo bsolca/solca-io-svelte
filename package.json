@@ -3,8 +3,9 @@
   "description": "TODO",
   "version": "0.0.1",
   "scripts": {
+    "autobuild": "sapper dev",
     "watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
-    "dev": "sapper dev",
+    "dev": "run-p autobuild watch:tailwind",
     "build": "tailwind && sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
