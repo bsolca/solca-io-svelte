@@ -18,7 +18,7 @@
 	img {
 		width: 100%;
 		max-width: 400px;
-		margin: 0 0 1em 0;
+		margin: 0 auto 1em;
 	}
 
 	p {
@@ -36,7 +36,7 @@
 	<title>Sapper project template</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h1 class="bg-purple-700 text-white">Great success!</h1>
 
 <figure>
 	<img alt='Borat' src='great-success.png'>
