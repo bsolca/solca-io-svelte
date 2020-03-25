@@ -6,3 +6,5 @@ yarn-error.log
 /__sapper__/
 
 .idea/
+
+static/index.css
