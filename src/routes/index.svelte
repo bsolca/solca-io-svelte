@@ -1,5 +1,7 @@
 <style>
-	h1, figure, p {
+	h1,
+	figure,
+	p {
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -30,6 +32,16 @@
 			font-size: 4em;
 		}
 	}
+
+	.btn {
+		@apply font-bold py-2 px-4 rounded;
+	}
+	.btn-blue {
+		@apply bg-blue-500 text-white;
+	}
+	.btn-blue:hover {
+		@apply bg-blue-700;
+	}
 </style>
 
 <svelte:head>
@@ -39,8 +51,16 @@
 <h1 class="bg-purple-700 text-white">Great success!</h1>
 
 <figure>
-	<img alt='Borat' src='great-success.png'>
+	<img alt="Borat" src="great-success.png" />
 	<figcaption>HIGH FIVE!</figcaption>
 </figure>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<p>
+	<strong>
+		Try editing this file (src/routes/index.svelte) to test live reloading.
+	</strong>
+</p>
+
+<center>
+	<button class="btn btn-blue">tailwindcss example button</button>
+</center>
