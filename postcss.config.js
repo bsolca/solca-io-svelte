@@ -1,4 +1,5 @@
-const production = process.env.NODE_ENV !== 'development';
+const mode = process.env.NODE_ENV;
+const dev = mode === 'development';
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
 
@@ -29,8 +30,8 @@ const postcssPlugins = () => {
 module.exports = {
     plugins: [
         require('tailwindcss'),
-        ...(production ? [postcssPlugins] : [])
+        ...(!dev ? [postcssPlugins] : [])
     ]
 };
 
-console.log("Am I in prod? >> " + production);
+console.log("Am I in dev? >> " + dev);
