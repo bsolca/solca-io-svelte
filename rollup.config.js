@@ -11,6 +11,7 @@ import pkg from './package.json';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
+console.log("[rollup.config.js] Am I in dev? >> " + dev);
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 const onwarn = (warning, onwarn) =>

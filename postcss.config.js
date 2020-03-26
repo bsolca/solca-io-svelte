@@ -34,4 +34,4 @@ module.exports = {
     ]
 };
 
-console.log("Am I in dev? >> " + dev);
+console.log("[postcss.config.js] Am I in dev? >> " + dev);
