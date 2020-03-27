@@ -3,7 +3,7 @@
 </script>
 
 <style>
-    h1, .noTechno {
+    h1 {
         @apply text-red-500 text-center text-6xl font-black;
     }
 </style>
@@ -17,6 +17,6 @@
             {/each}
         </ul>
     {:else}
-        <div class="noTechno"><em>Love need time</em></div>
+        <h1>Love need time</h1>
     {/if}
 </section>

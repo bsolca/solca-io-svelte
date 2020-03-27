@@ -1,6 +1,6 @@
 <script>
-    import Presentation from "../components/Presentation.svelte";
-    import MySandbox from "../components/MySandbox.svelte";
+    import Presentation from "../components/main/Presentation.svelte";
+    import MySandbox from "../components/main/MySandbox.svelte";
 
     let technoList = [
         {
